@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from '@/images/logo.png';
 
 import news1 from '@/images/news/f1.jpg'
 import news2 from '@/images/news/f2.jpg'
@@ -40,95 +39,6 @@ import ImageSlider from '@/components/sliderSection';
 export default function Home() {
   return (
 <>
-    <header className="header-top bg-grey justify-content-center">
-		<div className="container">
-			<div className="row align-items-center">
-				<div className="col-lg-2 col-md-4 text-center d-none d-lg-block">
-					<a className="navbar-brand " href="index.html">
-						<Image src={logo} alt="" layout='responsive' width={100} height={100} className="img-fluid"/>
-					</a>
-				</div>
-
-				<div className="col-lg-8 col-md-12">
-					<nav className="navbar navbar-expand-lg navigation-2 navigation">
-						<Link className="navbar-brand text-uppercase d-lg-none" href="#">
-							<Image src={logo} alt="" layout='responsive' width={100} height={100}  className="img-fluid"/>
-						</Link>
-						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
-							aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-							<span className="ti-menu"></span>
-						</button>
-
-						<div className="collapse navbar-collapse" id="navbar-collapse">
-							<ul id="menu" className="menu navbar-nav mx-auto">
-								<li className="nav-item dropdown">
-									<Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Home
-									</Link>
-									<div className="dropdown-menu" aria-labelledby="navbarDropdown">
-										<Link className="dropdown-item" href="index.html">Home 1</Link>
-										<Link className="dropdown-item" href="index-2.html">Home 2</Link>
-										<Link className="dropdown-item" href="index-3.html">Home 3</Link>
-										<Link className="dropdown-item" href="index-4.html">Home 4</Link>
-										<Link className="dropdown-item" href="index-5.html">Home 5</Link>
-										<Link className="dropdown-item" href="index-6.html">Home 6</Link>
-									</div>
-								</li>
-								<li className="nav-item dropdown">
-									<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Blog Posts
-									</a>
-									<div className="dropdown-menu" aria-labelledby="navbarDropdown2">
-										<a className="dropdown-item" href="standard-fullwidth.html">Standard Fullwidth</a>
-										<a className="dropdown-item" href="standard-left-sidebar.html">Standard Left Sidebar</a>
-										<a className="dropdown-item" href="standard-right-sidebar.html">Standard Right Sidebar</a>
-									</div>
-								</li>
-
-								<li className="nav-item"><a href="about.html" className="nav-link">About</a></li>
-								<li className="nav-item"><a href="fashion.html" className="nav-link">Category</a></li>
-								<li className="nav-item dropdown">
-									<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										Post Format
-									</a>
-									<div className="dropdown-menu" aria-labelledby="navbarDropdown3">
-										<a className="dropdown-item" href="post-video.html">Video Formats</a>
-										<a className="dropdown-item" href="post-audio.html">Audio Format</a>
-										<a className="dropdown-item" href="post-link.html">Quote Format</a>
-										<a className="dropdown-item" href="post-gallery.html">Gallery Format</a>
-										<a className="dropdown-item" href="post-image.html">Image Format</a>
-									</div>
-								</li>
-
-								<li className="nav-item"><a href="contact.html" className="nav-link">Contact</a></li>
-							</ul>
-
-							<ul className="list-inline mb-0 d-block d-lg-none">
-								<li className="list-inline-item"><a href="#"><i className="ti-facebook"></i></a></li>
-								<li className="list-inline-item"><a href="#"><i className="ti-twitter"></i></a></li>
-								<li className="list-inline-item"><a href="#"><i className="ti-linkedin"></i></a></li>
-								<li className="list-inline-item"><a href="#"><i className="ti-pinterest"></i></a></li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-
-				<div className="col-lg-2 col-md-4 col-6">
-					<div className="header-socials-2 text-right d-none d-lg-block">
-						<ul className="list-inline mb-0">
-							<li className="list-inline-item"><a href="#"><i className="ti-facebook"></i></a></li>
-							<li className="list-inline-item"><a href="#"><i className="ti-twitter"></i></a></li>
-							<li className="list-inline-item"><a href="#"><i className="ti-linkedin"></i></a></li>
-							<li className="list-inline-item"><a href="#"><i className="ti-pinterest"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 
 	<section className="slider mt-4">
 		<div className="container-fluid">

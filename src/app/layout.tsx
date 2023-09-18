@@ -12,6 +12,7 @@ import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Script from 'next/script'
 import { useEffect } from 'react'
+import RootHeader from '@/components/header/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -65,6 +66,7 @@ export default function RootLayout({
       </Head>
 
       <body className={inter.className} suppressHydrationWarning={true}>
+        <RootHeader/>
         {children}
         
         
