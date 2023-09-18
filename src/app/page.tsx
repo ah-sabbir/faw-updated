@@ -15,7 +15,7 @@ import news9 from '@/images/news/f9.jpg'
 import news10 from '@/images/news/f10.jpg'
 import news11 from '@/images/news/f11.jpg'
 import news12 from '@/images/news/f12.jpg'
-import imageSlider from '@/components/sliderSection';
+import ImageSlider from '@/components/sliderSection';
 
 // 
 // @/images/news/f2.jpg
@@ -45,14 +45,14 @@ export default function Home() {
 			<div className="row align-items-center">
 				<div className="col-lg-2 col-md-4 text-center d-none d-lg-block">
 					<a className="navbar-brand " href="index.html">
-						<Image src={logo} alt="" layout="responsive" width={100} height={100} className="img-fluid"/>
+						<Image src={logo} alt="" layout='responsive' width={100} height={100} className="img-fluid"/>
 					</a>
 				</div>
 
 				<div className="col-lg-8 col-md-12">
 					<nav className="navbar navbar-expand-lg navigation-2 navigation">
 						<Link className="navbar-brand text-uppercase d-lg-none" href="#">
-							<Image src={logo} alt="" layout="responsive" width={100} height={100}  className="img-fluid"/>
+							<Image src={logo} alt="" layout='responsive' width={100} height={100}  className="img-fluid"/>
 						</Link>
 						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
 							aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,10 +132,10 @@ export default function Home() {
 
 	<section className="slider mt-4">
 		<div className="container-fluid">
-			<div className="row no-gutters">
-				<div className="col-lg-12 col-sm-12 col-md-12 slider-wrap">
+			<div className="d-flex justify-center row no-gutters">
+				<div className="col-lg-6 col-sm-6 col-md-6 slider-wrap">
 
-					<imageSlider/>
+					<ImageSlider/>
 
 				</div>
 			</div>
@@ -150,7 +150,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news1} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news1} alt="" layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
@@ -162,7 +162,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news2} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news2} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">How to Make list for travelling alone</a></h3>
@@ -174,7 +174,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news3} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news3} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Food</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">5 ingredient cilantro vinaigrette</a></h3>
@@ -186,7 +186,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news4} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news4} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Explore</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">A Simple Way to Feel Like Home When You
@@ -199,7 +199,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news5} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news5} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">What Type of Traveller Are You?</a></h3>
@@ -211,7 +211,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news6} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news6} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">A Road Trip Review of the 2018</a></h3>
@@ -223,7 +223,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news7} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news7} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">music</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">Portugal’s Sunset summer vission</a></h3>
@@ -235,7 +235,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news8} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news8} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">beauty</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">The best soft Tropical Getaway</a></h3>
@@ -247,7 +247,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news9} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news9} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">Memoriable Paris Girls Trip </a></h3>
@@ -259,7 +259,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news10} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news10} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">How to Plan your Trip the Right Way</a></h3>
@@ -272,7 +272,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news11} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news11} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">8 Powerful Ways to Add Vibrant Colour to Your
@@ -285,7 +285,7 @@ export default function Home() {
 						<div className="col-lg-3 col-md-6">
 							<article className="post-grid mb-5">
 								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news12} alt="" layout="responsive"  width={100} height={100}   className="img-fluid w-100"/>
+									<Image src={news12} alt="" layout='responsive' width={100} height={100}   className="img-fluid"/>
 								</a>
 								<span className=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
 								<h3 className="post-title mt-1"><a href="blog-single.html">The best to-do list to help boost your
@@ -300,7 +300,7 @@ export default function Home() {
 
 				<div className="m-auto">
 					<div className="pagination mt-5 pt-4">
-						<ul className="list-inline ">
+						<ul className="d-flex list-inline  ">
 							<li className="list-inline-item"><a href="#" className="active">1</a></li>
 							<li className="list-inline-item"><a href="#">2</a></li>
 							<li className="list-inline-item"><a href="#">3</a></li>
@@ -320,12 +320,12 @@ export default function Home() {
 						<div className="form-group mb-0">
 							<h2 className="mb-3">Subscribe Newsletter</h2>
 							<p className="mb-4">Subscribe my Newsletter for new blog posts , tips and info.</p>
-							<div className="form-group form-row align-items-center mb-0">
+							<div className="d-flex form-group form-row align-items-center mb-0">
 								<div className="col-sm-9">
 									<input type="email" className="form-control" placeholder="Email Address"/>
 								</div>
 								<div className="col-sm-3">
-									<a href="#" className="btn btn-dark ">Subscribe</a>
+									<a href="#" className="btn btn-dark mt-auto ">Subscribe</a>
 								</div>
 							</div>
 						</div>

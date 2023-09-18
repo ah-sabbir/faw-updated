@@ -1,28 +1,28 @@
+'use client'
+
 // import * as $ from 'jquery';
 import Image from 'next/image';
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// if (typeof window !== 'undefined') {
-//     window.$ = window.jQuery = require('jquery');
-// }
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import React from "react";
-import SliderCarusal from "react-slick";
+import './sliderSection.module.css';
 
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
-// import dynamic from 'next/dynamic';
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-// const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
-//   ssr: false,
-// });
 
 
 import slider1 from '@/images/slider/slider1.jpg'
 import slider2 from '@/images/slider/slider2.jpg'
 import slider3 from '@/images/slider/slider3.jpg'
+import Link from 'next/link';
 
 const options = {
   loop: true,
@@ -31,7 +31,34 @@ const options = {
   autoplay: true,
 };
 
-const imageSlider = ()=>{
+
+const data = [
+    {
+        image: slider1,
+        category: "Lifestyle",
+        title: "Tips for Taking a Long-term Trip",
+        date: "January 2, 2019",
+        URL: "/1"
+    },
+    {
+        image: slider1,
+        category: "Lifestyle",
+        title: "Tips for Taking a Long-term Trip",
+        date: "January 2, 2019",
+        URL: "/1"
+    },
+    {
+        image: slider1,
+        category: "Lifestyle",
+        title: "Tips for Taking a Long-term Trip",
+        date: "January 2, 2019",
+        URL: "/1"
+    },
+]
+
+
+
+const ImageSlider = ()=>{
     var settings = {
         dots: true,
         infinite: true,
@@ -41,90 +68,45 @@ const imageSlider = ()=>{
       };
 
     return (
-        <div>
-            <SliderCarusal {...settings}>
-                <div className="item">
-                    <div className="slider-item-content">
-                        <div className="post-thumb mb-4">
-                            <a href="blog-single.html">
-                                <Image src={slider1} alt="" layout='responsive' height={100} width={100} className="img-fluid"/>
-                            </a>
+        <>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+            {
+                data.map((d,i)=>{
+                    return (
+                        <SwiperSlide key={i} className="item">
+                        <div className="slider-item-content">
+                            <div className="post-thumb mb-4">
+                                    <Image src={d.image} alt="" layout='responsive' height={100} width={100} className="d-block"/>
+                            </div>
+    
+                            <div className="slider-post-content">
+                                <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">{d.category}</span>
+                                <h3 className="post-title mt-1"><Link href={d.URL}>{d.title}</Link></h3>
+                                <span className=" text-muted  text-capitalize">{d.date}</span>
+                            </div>
                         </div>
-
-                        <div className="slider-post-content">
-                            <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-                            <h3 className="post-title mt-1"><a href="blog-single.html">Tips for Taking a Long-term Trip</a></h3>
-                            <span className=" text-muted  text-capitalize">January 2, 2019</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="item">
-                    <div className="slider-item-content">
-                        <div className="post-thumb mb-4">
-                            <a href="blog-single.html">
-                                <Image src={slider2} alt="" layout="responsive"  width={100} height={100}   className="img-fluid"/>
-                            </a>
-                        </div>
-                        <div className="slider-post-content">
-                            <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-                            <h3 className="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-                            <span className=" text-muted  text-capitalize">September 15, 2019</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="item">
-                    <div className="slider-item-content">
-                        <div className="post-thumb mb-4">
-                            <a href="blog-single.html">
-                                <Image src={slider3} alt="" layout="responsive"  width={100} height={100}   className="img-fluid"/>
-                            </a>
-                        </div>
-                        <div className="slider-post-content">
-                            <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">weekends</span>
-                            <h3 className="post-title mt-1"><a href="blog-single.html">Our Favorite Weekend Getaways</a></h3>
-                            <span className=" text-muted  text-capitalize">June 12, 2019</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="item">
-                    <div className="slider-item-content">
-                        <div className="post-thumb mb-4">
-                            <a href="blog-single.html">
-                                <Image src={slider2} alt="" layout="responsive"  width={100} height={100}   className="img-fluid"/>
-                            </a>
-                        </div>
-
-                        <div className="slider-post-content">
-                            <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-                            <h3 className="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-                            <span className=" text-muted  text-capitalize">September 15, 2019</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="item">
-                    <div className="slider-item-content">
-                        <div className="post-thumb mb-4">
-                            <a href="blog-single.html">
-                                <Image src={slider3} alt="" layout="responsive"  width={100} height={100}   className="img-fluid"/>
-                            </a>
-                        </div>
-
-                        <div className="slider-post-content">
-                            <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-                            <h3 className="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-                            <span className=" text-muted  text-capitalize">September 15, 2019</span>
-                        </div>
-                    </div>
-                </div>
-            </SliderCarusal>
-        </div>
+                    </SwiperSlide>
+                    )
+                })
+            }
+            </Swiper>
+        </>
       );
 }
 
 
 
-export default imageSlider;
+export default ImageSlider;

@@ -1,18 +1,15 @@
+'use client'
+
+import '@/plugins/bootstrap/css/bootstrap.min.css'
+import '@/plugins/themify/css/themify-icons.css'
+import '@/plugins/magnific-popup/magnific-popup.css'
+
 import './globals.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-// //Themify
-// import '@/plugins/themify/css/themify-icons.css'
-// import '@/plugins/slick-carousel/slick-theme.css'
-// import '@/plugins/slick-carousel/slick.css'
-// // Slick Carousel
-// import '@/plugins/owlCarousel/owl.carousel.min.css'
-// import '@/plugins/owlCarousel/owl.theme.default.min.css'
-// import '@/plugins/magnific-popup/magnific-popup.css'
-// // Global Stylesheet
 
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
 import Script from 'next/script'
 import { useEffect } from 'react'
 
@@ -23,26 +20,70 @@ export const metadata: Metadata = {
   description: 'Worlds\'s #1 Fashion and Beauty Magazine',
 }
 
+
+
+// import type { AppProps } from 'next/app'
+
+// export function App({ Component, pageProps }: AppProps) {
+//   return (
+//     <>
+//     <Component {...pageProps} />
+//     <Script src="/plugins/bootstrap/js/bootstrap.min.js" defer/>
+//     <Script src="/plugins/bootstrap/js/popper.min.js" defer/>
+//     <Script src="/js/custom.js"/>
+
+//     </>
+//   )
+// }
+
+
+
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <Head>
+        {/* <script src="plugins/jquery/jquery.js" defer></script>
+
+        <script src='../plugins/bootstrap/js/bootstrap.min.js' defer></script>
+        <script src='../plugins/bootstrap/js/popper.min.js' defer></script>
+
+        <script src="plugins/owl-carousel/owl.carousel.min.js" defer></script>
+        <script src="plugins/slick-carousel/slick.min.js" defer></script>
+        <script src="plugins/magnific-popup/magnific-popup.js" defer></script>
+
+        <script src="plugins/instafeed-js/instafeed.min.js" defer></script>
+        
+        <script src='../plugins/bootstrap/js/popper.min.js' defer></script> */}
+
+
+
+      </Head>
+
+      <body className={inter.className} suppressHydrationWarning={true}>
         {children}
         
-        {/* <!-- THEME JAVASCRIPT FILES
-        ================================================== -->
-          {/* <!-- Instagram Feed Js --> */}
-          <Script src="plugins/instafeed-js/instafeed.min.js"></Script>
-          {/* <!-- Google Map --> */}
-          <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></Script>
-          <Script src="plugins/google-map/gmap.js"></Script>
-          {/* <!-- main js --> */}
-          <Script src="js/custom.js"></Script>
+        
+
+      {/* <script src="/plugins/jquery/jquery.js" defer ></script>
+
+      <script src='/plugins/bootstrap/js/bootstrap.min.js' defer ></script>
+      <script src='/plugins/bootstrap/js/popper.min.js' defer ></script>
+
+      <script src="/plugins/owl-carousel/owl.carousel.min.js" defer ></script>
+      <script src="/plugins/slick-carousel/slick.min.js" defer ></script>
+      <script src="/plugins/magnific-popup/magnific-popup.js" defer ></script>
+
+      <script src="/plugins/instafeed-js/instafeed.min.js" defer ></script>
+
+      <script src='/plugins/bootstrap/js/popper.min.js' defer ></script> */}
+
+      {/* <script src='/js/custom.js' defer ></script> */}
+      
         </body>
     </html>
   )
