@@ -41,200 +41,67 @@ export default function Home() {
 <>
 
 	<section className="slider mt-4">
-		<div className="container-fluid">
-			<div className="d-flex justify-center row no-gutters">
-				<div className="col-lg-6 col-sm-6 col-md-6 slider-wrap">
-
-					<ImageSlider/>
-
-				</div>
-			</div>
+		<div className="p-2 m-auto w-full">
+			<ImageSlider/>
 		</div>
 	</section>
 
-	<section className="section-padding">
-		<div className="container">
-			<div className="row">
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div className="row">
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news1} alt="" layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
 
-								<span className="text-muted letter-spacing text-uppercase font-sm">June 15, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news2} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">How to Make list for travelling alone</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news3} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Food</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">5 ingredient cilantro vinaigrette</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news4} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Explore</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">A Simple Way to Feel Like Home When You
-										Travel</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">March 20, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news5} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">What Type of Traveller Are You?</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news6} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">A Road Trip Review of the 2018</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">July 10, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news7} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">music</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">Portugal’s Sunset summer vission</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news8} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">beauty</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">The best soft Tropical Getaway</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">March 12, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news9} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">Memoriable Paris Girls Trip </a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">April 19, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news10} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">How to Plan your Trip the Right Way</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">February 15, 2019</span>
-
-							</article>
-						</div>
-
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news11} alt=""  layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">8 Powerful Ways to Add Vibrant Colour to Your
-										Life</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">August 15, 2019</span>
-
-							</article>
-						</div>
-						<div className="col-lg-3 col-md-6">
-							<article className="post-grid mb-5">
-								<a className="post-thumb mb-4 d-block" href="blog-single.html">
-									<Image src={news12} alt="" layout='responsive' width={100} height={100}   className="img-fluid"/>
-								</a>
-								<span className=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 className="post-title mt-1"><a href="blog-single.html">The best to-do list to help boost your
-										productivity</a></h3>
-
-								<span className="text-muted letter-spacing text-uppercase font-sm">October 2, 2019</span>
-
-							</article>
-						</div>
-					</div>
+{/* blog section */}
+	<section className=" pt-[70px] pb-[70px] relative">
+		<div className="px-[15px] mx-auto w-full">
+				{/* main blog container */}
+				<div className="flex flex-wrap mr-[-15px] items-center justify-center">
+					{
+						[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,1,1,1,1,1,1,1,1,1].map((d,i)=>{
+							return (
+								<div key={i} className="lg:w-1/4 px-4 md:w-1/2">
+									<article className="block mb-5 p-2 rounded ">
+										<a className="post-thumb mb-4 d-block" href="blog-heading">
+											<Image src={news1} alt="" layout='responsive'  className="block mb-4 "/>
+										</a>
+										<span className="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1 text-[#ce8460]">Explore</span>
+										<h3 className="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
+										<span className="letter-spacing text-uppercase font-sm tracking-[3px]">June 15, 2019</span>
+		
+									</article>
+								</div>
+							)
+						})
+					}
 				</div>
 
 				<div className="m-auto">
-					<div className="pagination mt-5 pt-4">
-						<ul className="d-flex list-inline  ">
-							<li className="list-inline-item"><a href="#" className="active">1</a></li>
+					<div className="pagination flex items-center justify-center pl-0 list-none rounded-[0.25rem] mt-5 pt-4">
+						<ul className="flex list-inline  ">
+							<li className="list-inline-item active:bg-[#ce8460] active:text-[#fff] active:border-[#ce8460]"><a href="#" className="active">1</a></li>
 							<li className="list-inline-item"><a href="#">2</a></li>
 							<li className="list-inline-item"><a href="#">3</a></li>
 							<li className="list-inline-item"><a href="#" className="prev-posts"><i className="ti-arrow-right"></i></a></li>
 						</ul>
 					</div>
 				</div>
-			</div>
 		</div>
 	</section>
 
-	<section className="footer-2 section-padding gray-bg pb-5">
-		<div className="container">
-			<div className="row justify-content-center">
+
+
+
+
+{/* footer section */}
+	<section className="block pt-[70px] text-left leading-6 text-base font-normal text-gray-700 box-border pb-12 relative bg-[#f5f5f5] justify-center">
+		<div className="px-[15px] mx-auto w-full">
+			<div className="flex items-center justify-center">
 				<div className="col-lg-6">
 					<div className="subscribe-footer text-center">
 						<div className="form-group mb-0">
 							<h2 className="mb-3">Subscribe Newsletter</h2>
 							<p className="mb-4">Subscribe my Newsletter for new blog posts , tips and info.</p>
-							<div className="d-flex form-group form-row align-items-center mb-0">
-								<div className="col-sm-9">
-									<input type="email" className="form-control" placeholder="Email Address"/>
+							<div className="flex flex-row flex-1 gap-2">
+								<div className="sm:w-3/4 pr-4 pl-4">
+									<input type="email" className="w-full shadow-none border-solid border-transparent px-[12px] py-[18px] bg-[#ffffff] text-[14px]" placeholder="Email Address"/>
 								</div>
-								<div className="col-sm-3">
+								<div className="sm:w-1/4 pr-4 pl-4">
 									<a href="#" className="btn btn-dark mt-auto ">Subscribe</a>
 								</div>
 							</div>

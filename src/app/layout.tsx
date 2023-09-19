@@ -1,7 +1,4 @@
-import '@/plugins/bootstrap/css/bootstrap.min.css'
-import '@/plugins/themify/css/themify-icons.css'
-import '@/plugins/magnific-popup/magnific-popup.css'
-
+import './themify/css/themify-icons.css'
 import './globals.css'
 
 
@@ -29,24 +26,6 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        {/* <script src="plugins/jquery/jquery.js" defer></script>
-
-        <script src='../plugins/bootstrap/js/bootstrap.min.js' defer></script>
-        <script src='../plugins/bootstrap/js/popper.min.js' defer></script>
-
-        <script src="plugins/owl-carousel/owl.carousel.min.js" defer></script>
-        <script src="plugins/slick-carousel/slick.min.js" defer></script>
-        <script src="plugins/magnific-popup/magnific-popup.js" defer></script>
-
-        <script src="plugins/instafeed-js/instafeed.min.js" defer></script>
-        
-        <script src='../plugins/bootstrap/js/popper.min.js' defer></script> */}
-
-
-
-      </Head>
-
       <body className={inter.className} suppressHydrationWarning={true}>
         <RootHeader/>
         {children}

@@ -10,7 +10,7 @@ const RootHeader = () => {
             <div className="flex flex-wrap items-center justify-between"> 
                 <div className='min-w-[142px]'>
                     <Link href="#">
-                        <Image src={logo} alt="" layout='responsive' width={100} height={100} className=' max-w-full h-auto'/>
+                        <Image src={logo} alt="" width={100} height={100} className=' max-w-full h-auto'/>
                     </Link>
                 </div>
 
