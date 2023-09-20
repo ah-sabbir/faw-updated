@@ -8,6 +8,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import RootHeader from '@/components/header/header'
+import { FooterSection } from '@/components/footer/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,7 +30,7 @@ export default function RootLayout({
       <body className={inter.className} suppressHydrationWarning={true}>
         <RootHeader/>
         {children}
-      
+        <FooterSection/>
         </body>
     </html>
   )

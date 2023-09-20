@@ -1,21 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
-import logo from '@/images/logo.png';
+// import logo from '@/images/logo.png';
+import logo from '@/app/brand-logo.png'
 
 const RootHeader = () => {
   return (
-        <header className="bg-[#f8efea] relative justify-center">
-        <div className="w-full px-5 mx-auto ">{/* container */}
-            <div className="flex flex-wrap items-center justify-between"> 
-                <div className='min-w-[142px]'>
+        <header className="bg-[#f8efea] w-full h-[92px] relative justify-center">
+            <div className="w-full h-full flex flex-wrap items-center justify-between px-[30px]"> 
+                <div className='w-[100px] h-[60px]'>
                     <Link href="#">
-                        <Image src={logo} alt="" width={100} height={100} className=' max-w-full h-auto'/>
+                        <Image src={logo} alt="" width={100} height={100} className='w-full h-full'/>
                     </Link>
                 </div>
 
                 <button className="lg:hidden" type="button">
-                    <span className="ti-menu font-semibold"></span>
+                    <span className="ti-menu font-semibold text-4xl"></span>
                 </button>
             
                 <nav className="hidden md:hidden lg:flex lg:justify-center lg:items-center">
@@ -52,7 +52,6 @@ const RootHeader = () => {
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
   )

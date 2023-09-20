@@ -49,7 +49,7 @@ export default function Home() {
 
 {/* blog section */}
 	<section className=" pt-[70px] pb-[70px] relative">
-		<div className="px-[15px] mx-auto w-full">
+		<div className=" md:max-w-screen-md lg:max-w-6xl px-[15px] mx-auto">
 				{/* main blog container */}
 				<div className="flex flex-wrap mr-[-15px] items-center justify-center">
 					{
@@ -57,13 +57,13 @@ export default function Home() {
 							return (
 								<div key={i} className="lg:w-1/4 px-4 md:w-1/2">
 									<article className="block mb-5 p-2 rounded ">
-										<a className="post-thumb mb-4 d-block" href="blog-heading">
+										<Link className="post-thumb mb-4 d-block" href="/blog-heading">
 											<Image src={news1} alt="" layout='responsive'  className="block mb-4 "/>
-										</a>
-										<span className="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1 text-[#ce8460]">Explore</span>
-										<h3 className="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
+										</Link>
+										<span className="font-extra text-sm uppercase letter-spacing-1 text-[#ce8460]">Explore</span>
+										<h3 className="post-title mt-1"><Link href="/The-best-place">The best place to explore to enjoy</Link></h3>
+										<p className='pt-5 pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae aliquid voluptas laboriosam consequatur id numquam adipisci quo labore vel necessitatibus dicta, assumenda iusto voluptate aperiam impedit sed nam officiis!</p>
 										<span className="letter-spacing text-uppercase font-sm tracking-[3px]">June 15, 2019</span>
-		
 									</article>
 								</div>
 							)
@@ -81,56 +81,6 @@ export default function Home() {
 						</ul>
 					</div>
 				</div>
-		</div>
-	</section>
-
-
-
-
-
-{/* footer section */}
-	<section className="block pt-[70px] text-left leading-6 text-base font-normal text-gray-700 box-border pb-12 relative bg-[#f5f5f5] justify-center">
-		<div className="px-[15px] mx-auto w-full">
-			<div className="flex items-center justify-center">
-				<div className="col-lg-6">
-					<div className="subscribe-footer text-center">
-						<div className="form-group mb-0">
-							<h2 className="mb-3">Subscribe Newsletter</h2>
-							<p className="mb-4">Subscribe my Newsletter for new blog posts , tips and info.</p>
-							<div className="flex flex-row flex-1 gap-2">
-								<div className="sm:w-3/4 pr-4 pl-4">
-									<input type="email" className="w-full shadow-none border-solid border-transparent px-[12px] py-[18px] bg-[#ffffff] text-[14px]" placeholder="Email Address"/>
-								</div>
-								<div className="sm:w-1/4 pr-4 pl-4">
-									<a href="#" className="btn btn-dark mt-auto ">Subscribe</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="footer-btm mt-5 pt-4 border-top">
-				<div className="row">
-					<div className="col-lg-12">
-						<ul className="list-inline footer-socials-2 text-center">
-							<li className="list-inline-item"><a href="#">Privacy policy</a></li>
-							<li className="list-inline-item"><a href="#">Support</a></li>
-							<li className="list-inline-item"><a href="#">About</a></li>
-							<li className="list-inline-item"><a href="#">Contact</a></li>
-							<li className="list-inline-item"><a href="#">Terms</a></li>
-							<li className="list-inline-item"><a href="#">Category</a></li>
-						</ul>
-					</div>
-				</div>
-				<div className="row justify-content-center">
-					<div className="col-lg-6">
-						<div className="copyright text-center ">
-							@ copyright all reserved to <Link href="https://fashionanywhere.shop/">fashionanywhere.shop</Link>
-              </div>
-						</div>
-					</div>
-			</div>
 		</div>
 	</section>
 </>

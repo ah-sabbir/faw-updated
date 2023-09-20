@@ -24,6 +24,7 @@ import slider2 from '@/images/slider/slider2.jpg'
 import slider3 from '@/images/slider/slider3.jpg'
 import Link from 'next/link';
 
+
 const options = {
   loop: true,
   margin: 10,
