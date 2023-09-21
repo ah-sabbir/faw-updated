@@ -10,8 +10,7 @@ interface BlogPost {
 }
 
 
-export const BlogPage = ({ Params }:any) => {
-    const pathName = usePathname();
+const BlogPage = ({ Params }:any) => {    const pathName = usePathname();
 
   return (
     <>
