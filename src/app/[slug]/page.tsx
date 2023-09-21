@@ -3,6 +3,7 @@
 import { notFound, usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image";
+import CommenstSection from "@/components/commentSection/comments";
 
 
 interface BlogPost {
@@ -89,6 +90,7 @@ const BlogPage = ({ Params }:any) => {    const pathName = usePathname();
                                 }
                             </div>
                         </div>
+                        <CommenstSection/>
                     </div>
                     <div> {/* right side */}
 

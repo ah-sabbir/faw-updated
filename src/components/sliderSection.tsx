@@ -92,10 +92,10 @@ const ImageSlider = ()=>{
                                     <Image src={d.image} alt="" width={100} height={100} className="object-fill w-full"/>
                             </div>
     
-                            <div className="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:bg-opacity-[0.70] flex bg-white rounded flex-col p-3 m-auto">
+                            <div className="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:bg-opacity-[0.70] flex bg-black bg-transparent rounded flex-col p-3 m-auto">
                                 <span className="cat-name text-color font-sm font-extra text-uppercase letter-spacing">{d.category}</span>
-                                <h2 className="my-2"><Link href={d.URL}>{d.title}</Link></h2>
-                                <p className='my-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, voluptas est! Officia suscipit odit porro unde optio magnam perferendis minus velit corporis, odio, similique, quidem dolor pariatur reiciendis quasi. Velit.</p>
+                                <h2 className="my-2 text-white"><Link href={d.URL}>{d.title}</Link></h2>
+                                <p className='my-2 text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, voluptas est! Officia suscipit odit porro unde optio magnam perferendis minus velit corporis, odio, similique, quidem dolor pariatur reiciendis quasi. Velit.</p>
                                 <span className=" uppercase">{d.date}</span>
                             </div>
                     </SwiperSlide>
